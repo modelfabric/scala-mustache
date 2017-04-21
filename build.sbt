@@ -2,13 +2,7 @@ import scala.util.Try
 
 name := "mustache"
 
-version := "1.2"
-
 scalaVersion := "2.11.8"
-
-resolvers += "Typesafe Repository" at "http://repo.typesafe.com/typesafe/releases/"
-
-resolvers += "Typesafe Snapshots Repository" at "http://repo.typesafe.com/typesafe/snapshots/"
 
 libraryDependencies ++= Seq(
   "junit" % "junit" % "4.8.1" % "test->default",
