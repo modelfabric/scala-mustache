@@ -9,6 +9,8 @@ libraryDependencies ++= Seq(
   "org.specs2" %% "specs2" % "3.8.9" % "test->default"
 )
 
+excludeDependencies ++= Seq("org.specs2" %% "specs2-cats")
+
 val snapshotRepository = Try("snapshots" at sys.env("REPOSITORY_SNAPSHOTS")).toOption
 val releaseRepository =  Try("releases"  at sys.env("REPOSITORY_RELEASES" )).toOption
 
