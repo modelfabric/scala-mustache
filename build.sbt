@@ -2,11 +2,11 @@ import scala.util.Try
 
 name := "mustache"
 
-scalaVersion := "2.11.8"
+scalaVersion := "2.12.2"
 
 libraryDependencies ++= Seq(
   "junit" % "junit" % "4.8.1" % "test->default",
-  "org.specs2" %% "specs2" % "2.3.12" % "test->default"
+  "org.specs2" %% "specs2" % "3.8.9" % "test->default"
 )
 
 val snapshotRepository = Try("snapshots" at sys.env("REPOSITORY_SNAPSHOTS")).toOption
